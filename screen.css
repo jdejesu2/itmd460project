@@ -2,7 +2,7 @@ html {
   font-family: Avenir, serif, "Times New Roman";
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background-color: #e3e3e2;
+  background-color: #ffffff;
 }
 
 body {
@@ -11,12 +11,7 @@ body {
   padding-left: 1.22em;
 }
 
-h1,
-h2,
-h3,
-p,  {
-  padding-bottom: 2em; /* 22 / 18 = 1.2222222222 */
-}
+
 
 h1 {
   color: #33cc33;
@@ -27,17 +22,16 @@ h1 {
 }
 
 
-
 h2 {
   font-size: 2.48em; /* 30 /18 = 1.666666667   1.667-1.48=0.187*/
-  line-height: 2.187em ;/* 60 / 30 = 2 */
+  line-height: 1.187em ;/* 60 / 30 = 2 */
   font-weight: bold;
   color: gray;
 }
 
 h3 {
   font-size: 0.987em; /* 20 / 18 = 1.111111--- 1.11-.987=.123 */
-  line-height: 2.623em ;/* 50 / 20 = 2.5 */
+  line-height: 1.623em ;/* 50 / 20 = 2.5 */
   color: gray;
 }
 
@@ -60,7 +54,7 @@ footer {
 
 #navigation li {
   float: left;
-  width: 14.0857143%;
+  width: 14.00857143%;
   bottom: 0;
   font-weight: bold;
   font-size: 0.75em; /* 13.503 / 18 = 0.75 */
@@ -81,6 +75,17 @@ footer {
   background-color: gray;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+img.aboutpagepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Modular Styles */
 /*
@@ -90,6 +95,19 @@ footer {
   2. concerned with adjustments to base styles,
       spacing, color, etc. etc.
 */
+
+#supporting ul,
+#supporting li {
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
+#supporting ul,
+#supporting li {
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
 
 #navigation ul,
 #navigation li {
@@ -113,9 +131,37 @@ footer {
 
 @media screen and (min-width: 860px) {
   body {
-    padding-right: 9.302325581%; /* 80 / 860 = 0.09302325581% */
-    padding-left: 9.302325581%; /* 80 / 860 = 0.09302325581% */
+    padding-right: 5.302325581%; /* 80 / 860 = 0.09302325581% */
+    padding-left: 5.302325581%; /* 80 / 860 = 0.09302325581% */
   }
 
+  #primary {
+    width: 48%;
+    float: left;
+  }
+  #supporting {
+    width: 49%;
+    margin-left: 3%;
+    float: left;
+  }
+
+  #footer {
+    clear: both;
+  }
+
+  .flexbox #primary,
+  .flexbox #supporting {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  }
 
 }
