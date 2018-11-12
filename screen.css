@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.987em; /* 20 / 18 = 1.111111--- 1.11-.987=.123 */
+  font-size: 1.5em; /* 20 / 18 = 1.111111--- 1.11-.987=.123 */
   line-height: 1.623em ;/* 50 / 20 = 2.5 */
   color: gray;
 }
@@ -43,6 +43,13 @@ footer {
   font-weight: bold;
   color: black;
   padding-top: 2em;
+}
+
+#boldthings
+{
+  font-size: 1.7em;
+  font-weight: bold;
+  line-height: 1.222em;
 }
 
 
