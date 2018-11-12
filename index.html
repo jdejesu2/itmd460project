@@ -6,7 +6,6 @@
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
     <link rel="stylesheet" href="screen.css"/>
-    <link rel="stylesheet" href="#//basehold.it/24"/>
     </head>
   <body>
   <header id="header">
@@ -42,16 +41,16 @@
             <figcaption>VAMOS GROUP 2018</figcaption>
         </figure>
 
-        <ul id="click">
-          <li>Click Group to Play Theme Song, Press P to Pause</li>
-        </ul>
-        <audio id="music" controls="controls">
-          <source src="audio/youvegotafriendinme.wav" />
-          Your browser does not support the audio element.
+        <label for="themesong">Listen to our theme song:</label>
+
+        <audio
+            id="themesong"
+            controls
+            src="/audio/yougotafriendinme.m4a">
+            Your browser does not support the <code>audio</code> element.
         </audio>
 
       </aside>
-
 
   <footer id="footer">
   <p> Page created by Jessica DeJesus</p>
