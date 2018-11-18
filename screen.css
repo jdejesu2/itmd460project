@@ -8,24 +8,27 @@ html {
 header{
   padding-right: 0%;
   padding-left: 0%;
-  padding-bottom: 15em;
+  padding-bottom: 25em;
 }
+
+main{
+  padding-top: 2em;
+}
+
 
 h1 {
   color: #33cc33;
-  font-size: 3.369em; /* 42.635 / 18 = 2.369 */
+  font-size: 2.5em; /* 42.635 / 18 = 2.369 */
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
-  padding-bottom: 1em; /* 22 / 42.635 = 0.516 */
   text-align: center;
 }
 
 
 h2 {
-  font-size: 2.48em; /* 30 /18 = 1.666666667   1.667-1.48=0.187*/
-  line-height: 1.187em ;/* 60 / 30 = 2 */
+  color: black;
+  font-size: 1.7em;
   font-weight: bold;
-  color: gray;
-  padding-top: 0 ;
+  line-height: 1.222em;
 }
 
 h3 {
@@ -46,30 +49,27 @@ footer {
 #banner {
   background-image: url("images/vamosgroup.jpg");
   background-position: top;
-  padding-top: 6.25em; /* 137.5/22 = 5.25*/
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#nav-bar
-{
-
-}
-
-#boldthings
-{
-  font-size: 1.7em;
-  font-weight: bold;
-  line-height: 1.222em;
+#banner2{
+  background-image: url("images/aboutpagepic.jpg");
+  background-position: top;
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 #navigation {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
+
 
 
 #navigation a {
@@ -87,6 +87,14 @@ footer {
   background-color: gray;
 }
 
+#navigation ul,
+#navigation li {
+  list-style-type: none;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+
 img {
   display: inline-block;
   max-width: 100%;
@@ -96,6 +104,14 @@ img.aboutpagepic {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#logo {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(100, 100, 100, .7);
 }
 
 
@@ -125,14 +141,6 @@ img.aboutpagepic {
     width: 100%;
     top: 0;
     left: 0;
-    padding-top: 25.333333em;
-  }
-
-  #navigation ul,
-  #navigation li {
-    list-style-type: none;
-    padding-bottom:0;
-    padding-top: 0;
   }
 
 
@@ -142,10 +150,6 @@ img.aboutpagepic {
     bottom: 0;
     font-weight: bold;
     font-size: 0.75em; /* 13.503 / 18 = 0.75 */
-  }
-
-  h2 {
-    padding-top: 5em;
   }
 
 
@@ -160,6 +164,13 @@ img.aboutpagepic {
     background-attachment: fixed;
     background-position: center;
   }
+
+  #logo {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 5%;
+  }
 }
 
 @media screen and (min-width: 860px) {
@@ -167,6 +178,13 @@ img.aboutpagepic {
   main {
     padding-right: 5.302325581%; /* 80 / 860 = 0.09302325581% */
     padding-left: 5.302325581%; /* 80 / 860 = 0.09302325581% */
+  }
+
+  #logo {
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-bottom: 5%;
   }
 
   #navigation li {
