@@ -62,6 +62,37 @@ footer {
   background-repeat: no-repeat;
 }
 
+#banner3{
+  background-image: url("images/vamosgroup2017.jpg");
+  background-position: top;
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner4{
+  background-image: url("images/mentorbanner.jpg");
+  background-position: top;
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner5{
+  background-image: url("images/studentbanner.jpg");
+  background-position: top;
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner6{
+  background-image: url("images/contactbanner.jpg");
+  background-position: top;
+  padding-top: 5.25em; /* 137.5/22 = 5.25*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 #navigation {
   overflow: hidden;
@@ -165,6 +196,31 @@ img.aboutpagepic {
     background-position: center;
   }
 
+  #banner2 {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #banner3 {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #banner4 {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #banner5 {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #banner6 {
+    background-attachment: fixed;
+    background-position: center;
+  }
+
   #logo {
   width: 30%;
   margin-left: 35%;
@@ -227,6 +283,26 @@ img.aboutpagepic {
     }
 
     #banner {
+  padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+    #banner2 {
+  padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+    #banner3 {
+  padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+    #banner4 {
+  padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+    #banner5 {
+  padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+    #banner6 {
   padding-top: 10.5em; /* 187/22 = 8.5*/
   }
 
