@@ -29,9 +29,9 @@ h1 {
 
 h2 {
   color: black;
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: bold;
-  line-height: 1.222em;
+  line-height: 1em;
 }
 
 h3 {
@@ -271,6 +271,13 @@ img.aboutpagepic {
   #threeways {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.33333em;
+    padding-bottom: 1em;
+  }
+
+  #sixways {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.33333em;
     padding-bottom: 1em;
   }
