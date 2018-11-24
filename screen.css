@@ -5,16 +5,19 @@ html {
   background-color: #ffffff;
 }
 
+
+
 header{
-  padding-right: 0%;
-  padding-left: 0%;
-  padding-bottom: 25em;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 20em;
 }
 
 main{
-  padding-top: 2em;
+  padding-top: 30em;
 }
-
 
 h1 {
   color: #33cc33;
@@ -49,7 +52,6 @@ footer {
 #banner {
   background-image: url("images/vamosgroup.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -57,7 +59,6 @@ footer {
 #banner2{
   background-image: url("images/aboutpagepic.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -65,7 +66,6 @@ footer {
 #banner3{
   background-image: url("images/vamosgroup2017.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,7 +73,6 @@ footer {
 #banner4{
   background-image: url("images/mentorbanner.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -81,7 +80,6 @@ footer {
 #banner5{
   background-image: url("images/studentbanner.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -89,25 +87,16 @@ footer {
 #banner6{
   background-image: url("images/contactbanner.jpg");
   background-position: top;
-  padding-top: 5.25em; /* 137.5/22 = 5.25*/
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-#navigation {
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-
 
 
 #navigation a {
   display: block;
   width: 100%;
-  padding-top: 0.8em; /* 11 / 18 = 0.611 */
-  padding-bottom: 0.8em;
+  padding-top: 1em; /* 11 / 18 = 0.611 */
+  padding-bottom: 1em;
   text-align: center;
   text-decoration: none; /* removes underlines */
   color: white;
@@ -122,7 +111,7 @@ footer {
 #navigation li {
   list-style-type: none;
   padding-bottom: 0;
-  padding-top: 0;
+  top: 0; /* Position the navbar at the top of the page */
 }
 
 
@@ -130,6 +119,8 @@ img {
   display: inline-block;
   max-width: 100%;
 }
+
+
 
 img.aboutpagepic {
   display: block;
@@ -146,6 +137,7 @@ img.aboutpagepic {
 }
 
 
+
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -160,18 +152,13 @@ img.aboutpagepic {
   main {
     padding-right: 10.666667%; /* 40 / 375 = 10.666667% */
     padding-left: 10.666667%; /* 40 / 375 = 10.666667% */
+    padding-top: 39em;
   }
 
 
   .flexbox #navigation li {
     flex-basis: 100%;
-  }
-
-  #navigation {
-    position: absolute;
-    width: 100%;
     top: 0;
-    left: 0;
   }
 
 
@@ -179,6 +166,7 @@ img.aboutpagepic {
     float: center;
     width: 90%;
     bottom: 0;
+    top: 0;
     font-weight: bold;
     font-size: 0.75em; /* 13.503 / 18 = 0.75 */
   }
@@ -234,6 +222,7 @@ img.aboutpagepic {
   main {
     padding-right: 5.302325581%; /* 80 / 860 = 0.09302325581% */
     padding-left: 5.302325581%; /* 80 / 860 = 0.09302325581% */
+    padding-top: 30em;
   }
 
   #logo {
@@ -245,10 +234,11 @@ img.aboutpagepic {
 
   #navigation li {
     float: left;
-    width: 16.2433%;
+    width: 15.5%;
     bottom: 0;
     font-weight: bold;
     font-size: 0.75em; /* 13.503 / 18 = 0.75 */
+    top: 0;
   }
 
   #primary {
@@ -278,9 +268,13 @@ img.aboutpagepic {
     margin: auto;
   }
 
-    h2 {
-      padding-top: 0em;
-    }
+  #threeways {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.33333em;
+    padding-bottom: 1em;
+  }
+
 
     #banner {
   padding-top: 10.5em; /* 187/22 = 8.5*/
@@ -304,6 +298,14 @@ img.aboutpagepic {
 
     #banner6 {
   padding-top: 10.5em; /* 187/22 = 8.5*/
+  }
+
+  .nav {
+      overflow: hidden;
+      background-color: black;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
   }
 
   }
